@@ -1,5 +1,3 @@
-#![feature(string_remove_matches)]
-
 use reqwest::get;
 use serde_derive::Deserialize;
 use serde_derive::Serialize;
