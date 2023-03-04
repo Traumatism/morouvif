@@ -78,6 +78,8 @@ async fn main() -> Result<()> {
             let response = get(file_url).await.unwrap();
             fs::write(format!("data/{title}"), response.text().await.unwrap()).unwrap();
         }
+
+        println!("OK (written to data/)");
     }
 
     Ok(())
